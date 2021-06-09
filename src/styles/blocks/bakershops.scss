@@ -20,7 +20,7 @@
   }
 
   &__select {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     padding: 10px;
     cursor: pointer;
     font: inherit;
@@ -45,7 +45,7 @@
   }
 
   &__button {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     height: 40px;
 
     @media (min-width: 992px) {
@@ -68,7 +68,7 @@
     }
 
     @media (min-width: 1020px) {
-      width: 1000px;
+      width: 800px;
     }
   }
 }

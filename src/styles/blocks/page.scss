@@ -3,16 +3,29 @@
 
   &__header {
     height: 100vh;
-    background-image: url(../images/mob-background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right;
+    transition: background-image 0.3s;
 
     @media (max-height: 567px) {
       height: 200vh;
     }
 
-    @media (min-width: 768px) {
-      background-image: url(../images/bake-cream-puff-cup-1775045.png);
+    &--background1 {
+      background-image: url(../images/mob-background.png);
+
+      @media (min-width: 768px) {
+        background-image: url(../images/bake-cream-puff-cup-1775045.png);
+      }
+    }
+
+    &--background3 {
+      background-image: url(../images/background2.png);
+    }
+
+    &--background2 {
+      background-image: url(../images/background3.png);
     }
   }
 

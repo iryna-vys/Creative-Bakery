@@ -11,9 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Cookie&family=Rubik:wght@300;400;700&display=swap"
       rel="stylesheet"
     >
+    <script src="./scripts/main.js" defer></script>
   </head>
   <body class="page">
-    <header class="page__header">
+    <header class="page__header page__header--background1">
       <div class="page__wrapper">
         <div class="header">
           <input
@@ -37,7 +38,7 @@
             <p class="header__paragraph">
               We bake your fantasies: croissants<br>cakes, cookies, and cupcakes.
             </p>
-            <a class="header__button button">
+            <a class="header__button button" href="#about">
               Learn more
             </a>
             <div class="header__number number">
@@ -171,13 +172,13 @@
               </div>
             </div>
             <div class="bakery__gallery">
-              <div class="bakery__toggler toggler toggler--left"></div>
+              <div class="bakery__toggler toggler toggler__left"></div>
               <img
                 class="bakery__img"
                 src="./images/image1.png"
                 alt="Cookies photo"
               >
-              <div class="bakery__toggler toggler toggler--right"></div>
+              <div class="bakery__toggler toggler toggler__right"></div>
             </div>
           </div>
           <div class="bakery__item">
@@ -201,13 +202,13 @@
               </div>
             </div>
             <div class="bakery__gallery bakery__gallery--reverse">
-              <div class="bakery__toggler toggler toggler--left"></div>
+              <div class="bakery__toggler toggler toggler__left"></div>
               <img
                 class="bakery__img"
                 src="./images/image2.png"
                 alt="Cakes photo"
               >
-              <div class="bakery__toggler toggler toggler--right"></div>
+              <div class="bakery__toggler toggler toggler__right"></div>
             </div>
           </div>
           <div class="bakery__item">
@@ -231,13 +232,13 @@
               </div>
             </div>
             <div class="bakery__gallery">
-              <div class="bakery__toggler toggler toggler--left"></div>
+              <div class="bakery__toggler toggler toggler__left"></div>
               <img
               class="bakery__img"
               src="./images/image3.png"
               alt="Croissants photo"
               >
-              <div class="bakery__toggler toggler toggler--right"></div>
+              <div class="bakery__toggler toggler toggler__right"></div>
             </div>
           </div>
           <div class="bakery__item">
@@ -261,13 +262,13 @@
               </div>
             </div>
             <div class="bakery__gallery bakery__gallery--reverse">
-              <div class="bakery__toggler toggler toggler--left"></div>
+              <div class="bakery__toggler toggler toggler__left"></div>
               <img
               class="bakery__img"
               src="./images/image4.png"
               alt="Cupcakes photo"
               >
-              <div class="bakery__toggler toggler toggler--right"></div>
+              <div class="bakery__toggler toggler toggler__right"></div>
             </div>
           </div>
         </div>
@@ -323,9 +324,9 @@
               name="adress"
             >
               <option value="0">Adress</option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
+              <option value="backerAdress1">backerAdress1</option>
+              <option value="backerAdress2">backerAdress2</option>
+              <option value="backerAdress3">backerAdress3</option>
             </select>
             <button
               class="bakershops__button button button--primary"
@@ -413,7 +414,10 @@
                 <h4 class="contacts__list">
                   Get it touch
                 </h4>
-                <a class="contacts__item contacts__item--bold contacts__item--icon" href="#map">
+                <a
+                  class="contacts__item contacts__item--bold contacts__item--icon"
+                  href="https://goo.gl/maps/jxiewxv9kFASZA146"
+                >
                   Bakerlab Head Office
                   <span class="contacts__item">
                     Ukraine, Kyiv, Holosiivska St, 53
@@ -489,7 +493,7 @@
                 class="feedback__input"
                 name="message"
                 placeholder="Message*"
-                rows="1"
+                rows="6"
              ></textarea>
               <button class="feedback__button button" type="submit">
                 Send
